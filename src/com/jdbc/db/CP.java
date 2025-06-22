@@ -9,8 +9,8 @@ public class CP {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			String url = "jdbc:mysql://localhost:3306/employee";
-			String username = "root";
-			String password = "root";
+			String username = "Your_username";
+			String password = "Your_password";
 			con = DriverManager.getConnection(url, username, password);
 		}catch(Exception e) {
 			e.printStackTrace();
