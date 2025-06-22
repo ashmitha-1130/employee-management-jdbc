@@ -50,7 +50,25 @@ By separating the application into these logical parts, the project achieves:
 - **Easier maintenance:** Changes in one part (like database queries) don’t affect unrelated parts (like UI).  
 - **Better readability:** Anyone new to the project can easily understand and navigate the codebase.
 
+## Note: Adding the MySQL JDBC Driver
 
+To run this project successfully, you need to have the **MySQL JDBC driver (JAR file)** added to your project’s build path.
 
+### 📦 Steps to Add MySQL JAR in Eclipse
+
+1. **Download** the MySQL Connector (JDBC driver) from the official site:  
+
+2. **Extract** the ZIP file if it's downloaded in a compressed format.
+
+3. In **Eclipse**:
+   - Right-click on your project name in the **Project Explorer**
+   - Go to **Build Path** → **Configure Build Path**
+   - In the **Libraries** tab, click on **"Add External JARs..."**
+   - Browse to the location where you downloaded the MySQL connector and select the `.jar` file (e.g., `mysql-connector-java-8.0.xx.jar`)
+   - Click **Apply and Close**
+
+That's it! Your project can now communicate with MySQL using JDBC.
+
+> 💡 Make sure MySQL is installed and running, and that your connection details in the code (username, password, DB name, etc.) are correct.
 
 
