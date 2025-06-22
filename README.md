@@ -26,7 +26,7 @@ CREATE TABLE employeeData (
     department VARCHAR(100),
     salary DOUBLE
 );
-
+```
 ## Project Structure and Package Overview
 
 The project is organized into separate packages to keep the code clean, modular, and maintainable by clearly separating different responsibilities:
